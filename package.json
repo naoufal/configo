@@ -1,0 +1,50 @@
+{
+  "name": "configo",
+  "version": "0.1.1",
+  "description": "Hierarchical configuration with files and environment variables for node and the browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naoufal/configo.git"
+  },
+  "keywords": [
+    "configuration",
+    "config",
+    "env",
+    "files",
+    "key",
+    "value",
+    "store",
+    "browser",
+    "browserify"
+  ],
+  "author": "Naoufal Kadhom",
+  "bugs": {
+    "url": "https://github.com/naoufal/configo/issues"
+  },
+  "homepage": "https://github.com/naoufal/configo",
+  "dependencies": {
+    "envify": "3.2.0",
+    "lodash": "3.1.0"
+  },
+  "devDependencies": {
+    "browserify": "8.1.3",
+    "chai": "2.0.0",
+    "grunt": "0.4.5",
+    "grunt-browserify": "3.3.0",
+    "grunt-cli": "0.1.13",
+    "load-grunt-tasks": "3.1.0",
+    "mocha": "2.1.0",
+    "testem": "0.7.0-1"
+  },
+  "browser": {
+    "../../../config/default/private": false,
+    "../../../config/local/private": false
+  },
+  "browserify": {
+    "transform": ["envify"]
+  }
+}
