@@ -1,6 +1,6 @@
 {
   "name": "configo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Hierarchical configuration with files and environment variables for node and the browser",
   "main": "index.js",
   "scripts": {
